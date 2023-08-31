@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*inpuits não exceder limite*/
+    font-family: "Roboto";
+}
+
+body{
+    display: flex; /*Dividir a tela em 2, elementos fiquem um do lado do outro*/
+    flex-wrap: wrap; /*quebra a linha*/
+}
+
+#about-container{
+    flex: 1.4; /*dividir a tela, no caso lado esquerdo maior*/
+    padding: 2rem 4rem; /*espaçamento interno*/
+}
+
+#brand{
+    display: flex;
+    align-items: center; /*centraliza o texto com a loho horizontalmente*/
+    font-size: 0.8rem;
+    margin-bottom: 1rem; /*margem abaixo*/
+}
+
+#brand img{
+    height: 50px; /*altura*/
+    margin-right: 0.6rem; /*espaço á direita*/
+}
+
+#exclusive{
+    text-transform: uppercase;
+    color: #0075ff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#about-container h2{
+    font-size: 2.4rem;
+    max-width: 500px; /*largura maxima*/
+    margin-bottom: 1rem;
+}
+
+#date{
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+#description{
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem; /*espaçamento entre linhas*/
+}
+
+#about-container h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#users-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /*espaçamento entre os elementos*/
+}
+
+.user-card{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+}
+
+.user-card img{
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.user-card .user-name{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: black;
+}
+
+.user-card, .user-role{
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+#form-container{
+    flex: 1;
+    background-image: url("../img/pattern.png");
+    background-size: cover; /*Adequa o zoom da imagem de acordo com a área disponível*/
+    color: #fff;
+}
+
+#form-inner{
+    margin: 3rem;
+    padding: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;/*Forma colunar*/
+    align-items: center;
+}
+
+#form-inner h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#form-inner p{
+    margin-bottom: 1rem;
+}
+
+#register-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#register-form input{
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email{
+    min-width: 100%;
+}
+
+#register-form input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s; /*tempo de mudança do efeito hover*/
+}
+
+#register-form input[type="submit"]:hover{ /*mudar cor quando passa o mouse*/
+    background-color: #fff;
+    color: #0075ff;
+}
+
+#benefits{
+    text-align: left;
+    align-self: start; /*alinhar um elemnto especifico*/
+}
+
+#benefits h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#benefits ul{
+    list-style-position: inside; /*respeita o alinhamento*/
+}
+
+#benefits li{
+    margin-bottom: 0.5rem;
+}
